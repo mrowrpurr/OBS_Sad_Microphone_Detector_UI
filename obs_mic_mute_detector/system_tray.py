@@ -1,7 +1,7 @@
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication, QMenu, QSystemTrayIcon
 
-ICON_PATH = "resources/images/PinkChicken.png"
+ICON_PATH = ":/Icon.png"
 
 
 class SystemTrayIcon(QSystemTrayIcon):

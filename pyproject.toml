@@ -8,12 +8,8 @@ authors = []
 app = "obs_mic_mute_detector.__main__:main"
 
 [tool.poe.tasks]
-qrc = "pyside6-rcc -o app/qrc_resources.py resources/resources.qrc"
-windows-exe = "pyinstaller --onefile --windowed --noconfirm --name Forc --icon ../../resources/images/WindowsIcon.ico src/forc/app/__main__.py"
-windows-dir = "pyinstaller --onedir --windowed --noconfirm --name Forc --icon ../../resources/images/WindowsIcon.ico src/forc/app/__main__.py"
-mac-dir = "pyinstaller --onedir --windowed --noconfirm --name Forc --icon ../../resources/images/Icon256.icns src/forc/app/__main__.py"
-mac-dmg = "create-dmg --volname Forc --volicon ../../resources/images/Icon256.icns --background ../../resources/images/Background_DMG.png --window-pos 200 120 --window-size 800 400 --icon-size 100 --icon Forc.app 200 190 --app-drop-link 600 185 dist/Forc.dmg dist/Forc.app"
-mac-build = "poetry run poe mac-dir && poetry run poe mac-app && poetry run poe mac-dmg"
+qrc = "pyside6-rcc -o obs_mic_mute_detector/qrc_resources.py resources.qrc"
+windows-exe = "pyinstaller --onefile --windowed --noconfirm --name \"OBS Mic Mute Detector\" --icon resources/images/Icon.ico obs_mic_mute_detector/__main__.py"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.13"

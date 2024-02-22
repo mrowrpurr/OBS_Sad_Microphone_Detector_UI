@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource prefix="/">
+    <file alias="Icon.png">resources/images/PinkChicken.png</file>
+    <file alias="WarningImage.png">resources/images/MicChicken.png</file>
+  </qresource>
+</RCC>
