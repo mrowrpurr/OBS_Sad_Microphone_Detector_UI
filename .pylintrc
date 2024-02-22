@@ -425,6 +425,7 @@ disable=missing-module-docstring,
         missing-class-docstring,
         missing-function-docstring,
         too-few-public-methods,
+        invalid-name
 
 ; disable=raw-checker-failed,
 ;         bad-inline-option,
